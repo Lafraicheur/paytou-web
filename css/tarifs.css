@@ -1,0 +1,162 @@
+/* Variables personnalisées */
+:root {
+    --orange-color: #FF7800;
+    --green-color: #4CAF50;
+    --light-gray: #f8f9fa;
+    --border-radius: 10px;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour la section des tarifs */
+#tarifs {
+    padding-top: 120px !important;
+    background-color: var(--light-gray) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Titre et sous-titres */
+#tarifs .text-orange {
+    color: var(--orange-color) !important;
+}
+
+#tarifs h2.fw-bold {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+#tarifs .lead {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Cards de tarifs */
+.pricing-card {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: none !important;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-header {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.popular-plan {
+    border: 2px solid var(--orange-color) !important;
+}
+
+.popular-badge {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    background-color: var(--orange-color);
+    color: white;
+    padding: 0.25rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 3px 5px rgba(255, 120, 0, 0.3);
+    z-index: 10;
+}
+
+/* Style pour les prix */
+.display-4 {
+    font-weight: 700 !important;
+    color: var(--orange-color) !important;
+    font-size: 2.5rem !important;
+}
+
+/* Style pour les listes de fonctionnalités */
+.pricing-card .list-unstyled li {
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem !important;
+    display: flex;
+    align-items: flex-start;
+}
+
+.pricing-card .list-unstyled li i.fa-check-circle {
+    margin-top: 3px;
+    font-size: 1rem;
+    color: var(--green-color) !important;
+}
+
+.pricing-card .list-unstyled li span {
+    text-align: left;
+    line-height: 1.3;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    #tarifs {
+        padding-top: 100px !important;
+    }
+
+    #tarifs .lead {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-card {
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pricing-card:hover {
+        transform: translateY(-5px);
+    }
+}
+
+/* Remplace l'animation AOS par une animation simple */
+.col-lg-3[data-aos="fade-up"] {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.col-lg-3[data-aos-delay="100"] {
+    animation-delay: 0.1s;
+}
+
+.col-lg-3[data-aos-delay="200"] {
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Amélioration de l'espacement et des marges */
+.py-lg-7 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+/* Assurer que les couleurs s'appliquent correctement */
+.pricing-header[style*="background-color: var(--orange-color)"] {
+    background-color: var(--orange-color) !important;
+    color: white !important;
+}
+
+/* Forcer l'application des styles lorsque nécessaire */
+.text-center.mb-5 {
+    margin-bottom: 3rem !important;
+}

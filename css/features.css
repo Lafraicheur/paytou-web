@@ -1,0 +1,420 @@
+/* Features Page Specific Styles */
+
+/* Page Header */
+.page-header {
+    background-color: #F79420;
+    text-align: center;
+    padding: 60px 0;
+    color: var(--white-color);
+    margin-top: 80px;
+    /* Espace pour compenser la navbar fixe */
+}
+
+.page-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Features Overview Section */
+.features-overview {
+    padding: 80px 0;
+    background-color: var(--white-color);
+}
+
+.features-overview .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.feature-card {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(106, 85, 250, 0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(106, 85, 250, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.feature-card p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Feature Highlight Section */
+.feature-highlight {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.feature-highlight.alt-bg {
+    background-color: var(--white-color);
+}
+
+.feature-highlight .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.feature-highlight .container.reverse {
+    flex-direction: row-reverse;
+}
+
+.highlight-content {
+    flex: 1;
+}
+
+.highlight-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.feature-details p {
+    margin-bottom: 25px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.feature-list {
+    margin-bottom: 30px;
+}
+
+.feature-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-list li i {
+    color: var(--primary-color);
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.highlight-image {
+    flex: 1;
+    text-align: center;
+}
+
+.highlight-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+/* App Demo Section avec Carrousel */
+.app-demo {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #F79420 0%, #5DAE49 100%);
+    /* Dégradé des couleurs du logo */
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Couleurs du logo Paytou */
+:root {
+    --paytou-orange: #F79420;
+    --paytou-green: #5DAE49;
+}
+
+.app-demo .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.app-demo .section-header h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.app-demo .section-header p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+}
+
+/* Container du carrousel */
+.app-carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    overflow: hidden;
+}
+
+/* Carrousel des écrans */
+.app-carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 30px;
+}
+
+.screen-item {
+    flex: 0 0 300px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.screen-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    border: 8px solid var(--paytou-orange);
+}
+
+.screen-item:nth-child(odd) img {
+    border-color: var(--paytou-orange);
+    /* Bordure orange pour les écrans impairs */
+}
+
+.screen-item:nth-child(even) img {
+    border-color: var(--paytou-green);
+    /* Bordure verte pour les écrans pairs */
+}
+
+.screen-item:hover img {
+    transform: translateY(-10px);
+}
+
+.screen-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.screen-item:nth-child(odd) h3 {
+    color: var(--paytou-orange);
+    /* Titres orange pour les écrans impairs */
+}
+
+.screen-item:nth-child(even) h3 {
+    color: var(--paytou-green);
+    /* Titres verts pour les écrans pairs */
+}
+
+.screen-item p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+/* Contrôles du carrousel */
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.carousel-control {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-control.prev {
+    margin-right: 20px;
+}
+
+.carousel-control.next {
+    margin-left: 20px;
+}
+
+.carousel-control:hover {
+    background: white;
+    color: var(--paytou-orange);
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+/* Call to Action */
+.app-cta {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.app-cta p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 25px;
+    background-color: white;
+    color: var(--paytou-orange);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.download-btn:nth-child(1) {
+    border: 2px solid var(--paytou-orange);
+}
+
+.download-btn:nth-child(2) {
+    border: 2px solid var(--paytou-green);
+}
+
+.download-btn:nth-child(1):hover {
+    background-color: var(--paytou-orange);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.download-btn:nth-child(2):hover {
+    background-color: var(--paytou-green);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.download-btn i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Effets visuels */
+.app-demo::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(247, 148, 32, 0.15);
+    /* Orange semi-transparent */
+    z-index: 1;
+}
+
+.app-demo::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(93, 174, 73, 0.15);
+    /* Vert semi-transparent */
+    z-index: 1;
+}
+
+/* Animation défilante automatique */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-300px - 30px));
+        /* Largeur d'un élément + gap */
+    }
+}
+
+/* Adaptation pour les appareils mobiles */
+@media (max-width: 768px) {
+    .app-carousel {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 20px 0;
+    }
+
+    .screen-item {
+        flex: 0 0 85%;
+        scroll-snap-align: center;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-btn {
+        width: 80%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}

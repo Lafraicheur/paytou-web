@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAYTOU - Le Mobile Money autrement</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Préchargeur -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo-paytou.png" alt="Logo PAYTOU" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">CLIENT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PDV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">MARCHAND</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="tarifs.html">TARIFS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero-section mt-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0 slide-in-left animate__animated animate__fadeInRight">
+              <h1 class="display-1 fw-bold mb-4">
+                PAYTOU : Le Mobile Money simplifié.
+              </h1>
+              <p class="fs-5 mb-4">
+                Envoyez de l'argent facilement vers n'importe quel service
+                mobile.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="https://play.google.com/store/apps/details?id=paytou.net&hl=fr&fbclid=IwY2xjawKIIvJleHRuA2FlbQIxMABicmlkETBiYnVtbXdnNGl1MHF2UFVXAR6aKBisg1rtMXOO-vlR-J8zVeA4Yr2KVGYlIqTaBcuuDPxtLmvv3ZMf-f9CtQ_aem_xb0Nwh1nsENXaIr_cAwKdg" class="store-badge">
+                  <img
+                    src="https://easytransfert.ci/assets/images/elements/google-play.svg"
+                    alt="Google Play"
+                    height="50"
+                  />
+                </a>
+                <a href="https://apps.apple.com/us/app/paytou-by-e-sphere/id6743941820?platform=iphone" class="store-badge">
+                  <img
+                    src="https://easytransfert.ci/assets/images/elements/app-store.svg"
+                    alt="App Store"
+                    height="50"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center position-relative  slide-in-right animate__animated animate__fadeInLeft">
+              <div class="phone-containers">
+                <!-- Téléphone incliné -->
+                <div class="phone-mockups">
+                  <img
+                    src="images/home_paytou.png"
+                    alt="Application PAYTOU"
+                    class="img-fluid phone-screens"
+                  />
+                </div>
+
+                <!-- Illustration en arrière-plan -->
+                <div class="illustration-backgrounds">
+                  <svg
+                    width="380"
+                    height="450"
+                    viewBox="0 0 380 450"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <!-- Forme décorative 1 - cercle -->
+                    <circle
+                      cx="280"
+                      cy="150"
+                      r="80"
+                      fill="#F79420"
+                      fill-opacity="0.1"
+                    />
+
+                    <!-- Forme décorative 2 - vague -->
+                    <path
+                      d="M-20 250C40 220 100 280 160 250C220 220 280 280 340 250C400 220 460 280 520 250"
+                      stroke="#5CB24D"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                    />
+
+                    <!-- Forme décorative 3 - points -->
+                    <circle cx="60" cy="100" r="8" fill="#F79420" />
+                    <circle cx="90" cy="100" r="5" fill="#5CB24D" />
+                    <circle cx="110" cy="100" r="3" fill="#F79420" />
+
+                    <!-- Forme décorative 4 - lignes -->
+                    <line
+                      x1="50"
+                      y1="350"
+                      x2="100"
+                      y2="350"
+                      stroke="#5CB24D"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="60"
+                      y1="370"
+                      x2="90"
+                      y2="370"
+                      stroke="#F79420"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="70"
+                      y1="390"
+                      x2="80"
+                      y2="390"
+                      stroke="#5CB24D"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h2 class="display-5 mb-3" style="color: #f79420; font-weight: bold">
+            Pourquoi choisir PAYTOU ?
+          </h2>
+          <p class="fs-5" style="font-weight: bold">
+            Découvrez les avantages qui rendent PAYTOU unique
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4 mb-4">
+            <div
+              class="feature-card text-center p-4 bg-white rounded shadow-sm"
+              style="
+                height: 280px;
+                display: flex;
+                flex-direction: column;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+              "
+            >
+              <div class="feature-icon mb-3">
+                <i
+                  class="fas fa-percentage"
+                  style="font-size: 2.5rem; color: #f79420"
+                ></i>
+              </div>
+              <h3 class="h4 mb-3">0% de frais</h3>
+              <p class="flex-grow-1">
+                Profitez de transferts PAYTOU à PAYTOU sans aucun frais
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div
+              class="feature-card text-center p-4 bg-white rounded shadow-sm"
+              style="
+                height: 280px;
+                display: flex;
+                flex-direction: column;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+              "
+            >
+              <div class="feature-icon mb-3">
+                <i
+                  class="fas fa-wallet"
+                  style="font-size: 2.5rem; color: #5cb24d"
+                ></i>
+              </div>
+              <h3 class="h4 mb-3">Retraits et dépôts simplifiés</h3>
+              <p class="flex-grow-1">Opérations simples, rapides et fiables</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div
+              class="feature-card text-center p-4 bg-white rounded shadow-sm"
+              style="
+                height: 280px;
+                display: flex;
+                flex-direction: column;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+              "
+            >
+              <div class="feature-icon mb-3">
+                <i
+                  class="fas fa-mobile-alt"
+                  style="font-size: 2.5rem; color: #f79420"
+                ></i>
+              </div>
+              <h3 class="h4 mb-3">Application mobile disponible</h3>
+              <p class="flex-grow-1">
+                Téléchargeable sur Play Store et App Store
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div
+              class="feature-card text-center p-4 bg-white rounded shadow-sm"
+              style="
+                height: 280px;
+                display: flex;
+                flex-direction: column;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+              "
+            >
+              <div class="feature-icon mb-3">
+                <i
+                  class="fas fa-user-friends"
+                  style="font-size: 2.5rem; color: #5cb24d"
+                ></i>
+              </div>
+              <h3 class="h4 mb-3">Assistance locale</h3>
+              <p class="flex-grow-1">Avec vos PDV de quartier PAYTOU</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div
+              class="feature-card text-center p-4 bg-white rounded shadow-sm"
+              style="
+                height: 280px;
+                display: flex;
+                flex-direction: column;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+              "
+            >
+              <div class="feature-icon mb-3">
+                <i
+                  class="fas fa-shield-alt"
+                  style="font-size: 2.5rem; color: #f79420"
+                ></i>
+              </div>
+              <h3 class="h4 mb-3">Sécurité maximale</h3>
+              <p class="flex-grow-1">Vos transactions sont protégées</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div
+              class="feature-card text-center p-4 bg-white rounded shadow-sm"
+              style="
+                height: 280px;
+                display: flex;
+                flex-direction: column;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+              "
+            >
+              <div class="feature-icon mb-3">
+                <i
+                  class="fas fa-clock"
+                  style="font-size: 2.5rem; color: #5cb24d"
+                ></i>
+              </div>
+              <h3 class="h4 mb-3">Disponibilité 24/7</h3>
+              <p class="flex-grow-1">
+                Accédez à vos services quand vous le souhaitez
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- App Demo Section -->
+    <section class="app-demo py-5 bg-white">
+      <div class="container py-5">
+        <div class="text-center mb-5 animate__animated animate__fadeIn">
+          <h2
+            class="display-5 mb-3"
+            style="color: var(--secondary-color); font-weight: bold"
+          >
+            Une application conçue pour vous
+          </h2>
+          <p class="fs-5" style="font-weight: bold">
+            Découvrez l'interface intuitive de PAYTOU
+          </p>
+        </div>
+
+        <!-- Ajout de overflow-auto pour permettre le défilement sur mobile -->
+        <div
+          class="row justify-content-center flex-nowrap pb-4 screens-container"
+        >
+          <!-- Tous les écrans sur une même ligne -->
+          <div class="col-8 col-md-4 col-lg-3 mx-2">
+            <div
+              class="screen-item text-center animate__animated animate__fadeInUp"
+              style="animation-delay: 0.1s"
+            >
+              <div class="screen-wrapper">
+                <img
+                  src="images/home_paytou.png"
+                  alt="Écran d'accueil PAYTOU"
+                  class="img-fluid mb-3 screen-image"
+                  style="
+                    border: 8px solid #000000;
+                    border-radius: 50px;
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+                    transition: all 0.4s ease;
+                  "
+                />
+              </div>
+              <h3 class="h5" style="color: #f79420">Tableau de bord</h3>
+              <p>Visualisez votre solde et vos transactions récentes.</p>
+            </div>
+          </div>
+
+          <div class="col-8 col-md-4 col-lg-3 mx-2">
+            <div
+              class="screen-item text-center animate__animated animate__fadeInUp"
+              style="animation-delay: 0.2s"
+            >
+              <div class="screen-wrapper">
+                <img
+                  src="images/credit_unite.png"
+                  alt="Écran de détails transaction PAYTOU"
+                  class="img-fluid mb-3 screen-image"
+                  style="
+                    border: 8px solid #000000;
+                    border-radius: 50px;
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+                    transition: all 0.4s ease;
+                  "
+                />
+              </div>
+              <h3 class="h5" style="color: #f79420">Crédit d'unité</h3>
+              <p>
+                Achetez des crédits d'unité pour souscrire à des appels ou à
+                Internet.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-8 col-md-4 col-lg-3 mx-2">
+            <div
+              class="screen-item text-center animate__animated animate__fadeInUp"
+              style="animation-delay: 0.3s"
+            >
+              <div class="screen-wrapper">
+                <img
+                  src="images/mobile_money.png"
+                  alt="Écran Mobile Money PAYTOU"
+                  class="img-fluid mb-3 screen-image"
+                  style="
+                    border: 8px solid #000000;
+                    border-radius: 50px;
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+                    transition: all 0.4s ease;
+                  "
+                />
+              </div>
+              <h3 class="h5" style="color: #f79420">Mobile Money</h3>
+              <p>Gérez facilement vos dépôts et retraits.</p>
+            </div>
+          </div>
+
+          <div class="col-8 col-md-4 col-lg-3 mx-2">
+            <div
+              class="screen-item text-center animate__animated animate__fadeInUp"
+              style="animation-delay: 0.4s"
+            >
+              <div class="screen-wrapper">
+                <img
+                  src="images/statistiques.png"
+                  alt="Écran de statistiques PAYTOU"
+                  class="img-fluid mb-3 screen-image"
+                  style="
+                    border: 8px solid #000000;
+                    border-radius: 50px;
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+                    transition: all 0.4s ease;
+                  "
+                />
+              </div>
+              <h3 class="h5" style="color: #f79420">Statistiques</h3>
+              <p>Analysez vos habitudes financières.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container my-5">
+          <!-- Application 1 -->
+          <div class="row align-items-center mb-5">
+            <div
+              class="col-md-5 slide-in-right animate__animated animate__fadeInLeft"
+            >
+              <img
+                src="images/Scan to pay-pana.svg"
+                alt="Application 1"
+                class="img-fluid"
+    
+              />
+            </div>
+            <div
+              class="col-md-6 slide-in-left animate__animated animate__fadeInRight"
+            >
+              <h3 style="color: #f79420">Tableau de bord</h3>
+              <p>Visualisez votre solde et vos transactions récentes.</p>
+            </div>
+          </div>
+
+          <!-- Application 2 -->
+          <div class="row align-items-center flex-row-reverse mb-5 ">
+            <div class="col-md-5 slide-in-left animate__animated animate__fadeInRight">
+              <img
+                src="images/Scan to pay-amico.svg"
+                alt="Application 2"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-6 slide-in-right animate__animated animate__fadeInLeft">
+              <h3 style="color: #f79420">Crédit d'unité</h3>
+              <p>Achetez des crédits d'unité pour souscrire à des appels ou à Internet.</p>
+            </div>
+          </div>
+
+          <!-- Application 3 -->
+          <div class="row align-items-center mb-5">
+            <div class="col-md-5 slide-in-right animate__animated animate__fadeInLeft">
+              <img
+                src="images/Scan to pay-rafiki.svg"
+                alt="Application 3"
+                class="img-fluid "
+                
+              />
+            </div>
+            <div class="col-md-6 slide-in-left animate__animated animate__fadeInRight">
+              <h3 style="color: #f79420">Mobile Money</h3>
+              <p>
+                Gérez facilement vos dépôts et retraits.
+              </p>
+            </div>
+          </div>
+
+          <!-- Application 4 -->
+          <!-- <div class="row align-items-center flex-row-reverse mb-5 app-feature">
+            <div class="col-md-5 animate__animated animate__fadeInRight">
+              <img
+                src="images/statistiques.png"
+                alt="Application 2"
+                class="img-fluid screen-image"
+              />
+            </div>
+            <div class="col-md-6 animate__animated animate__fadeInLeft">
+              <h3 style="color: #f79420">Statistiques</h3>
+              <p>Analysez vos habitudes financières.</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section
+      class="testimonials py-5 bg-light position-relative overflow-hidden"
+    >
+      <!-- SVG Enveloppes animées -->
+
+      <div class="flying-butterflies">
+        <!-- Papillon 1 -->
+        <svg
+          class="butterfly butterfly-1"
+          width="50"
+          height="40"
+          viewBox="0 0 50 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M25 20C25 20 15 0 0 10C0 30 25 40 25 20Z" fill="#F79420" />
+          <path d="M25 20C25 20 35 0 50 10C50 30 25 40 25 20Z" fill="#F79420" />
+          <path d="M25 15V30" stroke="#5CB24D" stroke-width="2" />
+          <circle cx="25" cy="15" r="2" fill="#5CB24D" />
+        </svg>
+
+        <!-- Papillon 2 -->
+        <svg
+          class="butterfly butterfly-2"
+          width="40"
+          height="32"
+          viewBox="0 0 50 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M25 20C25 20 15 0 0 10C0 30 25 40 25 20Z" fill="#5CB24D" />
+          <path d="M25 20C25 20 35 0 50 10C50 30 25 40 25 20Z" fill="#5CB24D" />
+          <path d="M25 15V30" stroke="#F79420" stroke-width="2" />
+          <circle cx="25" cy="15" r="2" fill="#F79420" />
+        </svg>
+
+        <!-- Papillon 3 -->
+        <svg
+          class="butterfly butterfly-3"
+          width="45"
+          height="36"
+          viewBox="0 0 50 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M25 20C25 20 15 0 0 10C0 30 25 40 25 20Z" fill="#F79420" />
+          <path d="M25 20C25 20 35 0 50 10C50 30 25 40 25 20Z" fill="#F79420" />
+          <path d="M25 15V30" stroke="#5CB24D" stroke-width="2" />
+          <circle cx="25" cy="15" r="2" fill="#5CB24D" />
+        </svg>
+
+        <!-- Papillon 4 -->
+        <svg
+          class="butterfly butterfly-4"
+          width="35"
+          height="28"
+          viewBox="0 0 50 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M25 20C25 20 15 0 0 10C0 30 25 40 25 20Z" fill="#5CB24D" />
+          <path d="M25 20C25 20 35 0 50 10C50 30 25 40 25 20Z" fill="#5CB24D" />
+          <path d="M25 15V30" stroke="#F79420" stroke-width="2" />
+          <circle cx="25" cy="15" r="2" fill="#F79420" />
+        </svg>
+      </div>
+
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h2 class="display-5 mb-3" style="color: #f79420; font-weight: bold">
+            Ce que nos utilisateurs disent
+          </h2>
+          <p class="fs-5" style="font-weight: bold">
+            Rejoignez notre communauté de clients satisfaits
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4 mb-4">
+            <div
+              class="testimonial h-100 p-4 bg-white rounded shadow-sm"
+              style="transition: all 0.3s ease"
+            >
+              <div class="mb-4">
+                <div class="quote-icon mb-3" style="color: #f79420">
+                  <i class="fas fa-quote-left fa-2x opacity-25"></i>
+                </div>
+                <p class="fst-italic">
+                  "PAYTOU a changé ma façon de gérer mon argent. Plus besoin de
+                  me déplacer pour envoyer de l'argent à ma famille !"
+                </p>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="author-image me-3">
+                  <img
+                    src="images/testimonial-1.jpg"
+                    alt="Utilisateur PAYTOU"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 50%;
+                      object-fit: cover;
+                      border: 2px solid #f79420;
+                    "
+                  />
+                </div>
+                <div>
+                  <h4 class="h6 mb-1" style="color: #f79420">Marie K.</h4>
+                  <p class="small text-muted">Utilisatrice depuis 6 mois</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div
+              class="testimonial h-100 p-4 bg-white rounded shadow-sm"
+              style="transition: all 0.3s ease"
+            >
+              <div class="mb-4">
+                <div class="quote-icon mb-3" style="color: #5cb24d">
+                  <i class="fas fa-quote-left fa-2x opacity-25"></i>
+                </div>
+                <p class="fst-italic">
+                  "Les transferts gratuits entre utilisateurs PAYTOU sont un
+                  vrai plus. Je recommande cette application à tous mes proches
+                  !"
+                </p>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="author-image me-3">
+                  <img
+                    src="images/testimonial-2.jpg"
+                    alt="Utilisateur PAYTOU"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 50%;
+                      object-fit: cover;
+                      border: 2px solid #5cb24d;
+                    "
+                  />
+                </div>
+                <div>
+                  <h4 class="h6 mb-1" style="color: #5cb24d">Thomas B.</h4>
+                  <p class="small text-muted">Utilisateur depuis 1 an</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div
+              class="testimonial h-100 p-4 bg-white rounded shadow-sm"
+              style="transition: all 0.3s ease"
+            >
+              <div class="mb-4">
+                <div class="quote-icon mb-3" style="color: #f79420">
+                  <i class="fas fa-quote-left fa-2x opacity-25"></i>
+                </div>
+                <p class="fst-italic">
+                  "En tant que commerçant, le système de paiement par QR code a
+                  simplifié mes encaissements. Service au top !"
+                </p>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="author-image me-3">
+                  <img
+                    src="images/testimonial-3.jpg"
+                    alt="Utilisateur PAYTOU"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 50%;
+                      object-fit: cover;
+                      border: 2px solid #f79420;
+                    "
+                  />
+                </div>
+                <div>
+                  <h4 class="h6 mb-1" style="color: #f79420">Pierre M.</h4>
+                  <p class="small text-muted">Commerçant partenaire</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <!-- <section id="download" class="download-section py-5 text-white">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-7 mb-4 mb-lg-0">
+            <h2 class="display-5 fw-bold mb-4">
+              Téléchargez PAYTOU dès maintenant
+            </h2>
+            <p class="fs-5 mb-4">Disponible sur App Store et Google Play</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a
+                href="#"
+                class="btn btn-light d-flex align-items-center px-4 py-2"
+              >
+                <i class="fab fa-google-play me-2 fs-4"></i>
+                <span>Google Play</span>
+              </a>
+              <a
+                href="#"
+                class="btn btn-light d-flex align-items-center px-4 py-2"
+              >
+                <i class="fab fa-apple me-2 fs-4"></i>
+                <span>App Store</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center">
+            <img
+              src="images/mobile_money.png"
+              alt="Télécharger PAYTOU"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section
+      id="download"
+      class="py-5 position-relative overflow-hidden"
+      style="background-color: #ffffff"
+    >
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0 text-white">
+            <h2 class="display-3 fw-bold mb-4" style="color: #222222">
+              Paytou,<br />
+              toujours avec vous !
+            </h2>
+            <p class="fs-5 mb-5 pe-lg-5" style="color: #222222">
+              Peu importe où vous êtes, à tout moment, sur n'importe quel
+              téléphone. Effectuez vos transferts aussi simplement qu'un envoi
+              de message !
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="https://play.google.com/store/apps/details?id=paytou.net&hl=fr&fbclid=IwY2xjawKIIvJleHRuA2FlbQIxMABicmlkETBiYnVtbXdnNGl1MHF2UFVXAR6aKBisg1rtMXOO-vlR-J8zVeA4Yr2KVGYlIqTaBcuuDPxtLmvv3ZMf-f9CtQ_aem_xb0Nwh1nsENXaIr_cAwKdg" class="store-badge">
+                <img
+                  src="https://easytransfert.ci/assets/images/elements/google-play.svg"
+                  alt="Google Play"
+                  height="50"
+                />
+              </a>
+              <a href="https://apps.apple.com/us/app/paytou-by-e-sphere/id6743941820?platform=iphone" class="store-badge">
+                <img
+                  src="https://easytransfert.ci/assets/images/elements/app-store.svg"
+                  alt="App Store"
+                  height="50"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <div class="phone-mockup-container">
+              <div class="phone-mockup">
+                <img
+                  src="images/mobile_money.png"
+                  alt="Application PAYTOU"
+                  class="phone-screen img-fluid"
+                />
+              </div>
+              <div
+                class="character-illustration position-absolute"
+                style="right: -50px; bottom: -20px; z-index: 1"
+              >
+                <img
+                  src="https://easytransfert.ci/assets/images/elements/cta-vector.svg"
+                  alt="Personnage"
+                  style="max-height: 350px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-paytou pt-5 pb-3">
+      <div class="container">
+        <!-- Section supérieure avec effet de vague -->
+        <!-- <div class="footer-wave">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 140">
+            <path
+              fill="#FFFFFF"
+              fill-opacity="0.8"
+              d="M0,64L60,80C120,96,240,128,360,128C480,128,600,96,720,80C840,64,960,64,1080,69.3C1200,75,1320,85,1380,90.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+            ></path>
+            <path
+              fill="#F79420"
+              fill-opacity="0.4"
+              d="M0,32L60,48C120,64,240,96,360,101.3C480,107,600,85,720,69.3C840,53,960,43,1080,42.7C1200,43,1320,53,1380,58.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+            ></path>
+          </svg>
+        </div> -->
+
+        <div class="row mb-5">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="footer-brand text-center text-lg-start">
+              <div class="logo-container mb-4">
+                <img
+                  src="images/logo-paytou.png"
+                  alt="Logo PAYTOU"
+                  class="mb-3"
+                  style="height: 80px; position: relative; z-index: 5"
+                />
+                <p class="mb-2" style="font-weight: bold">
+                  PAYTOU – Le Mobile Money simplifié.
+                </p>
+              </div>
+
+              <!-- Google Maps integration -->
+              <div class="maps-container mb-4">
+                <div
+                  class="maps-wrapper rounded shadow-sm overflow-hidden"
+                  style="height: 200px"
+                >
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127356.66749006053!2d-4.050796606231408!3d5.348462711613761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ea5311959121%3A0x3fe70ddce19221a6!2sAbidjan%2C%20C%C3%B4te%20d'Ivoire!5e0!3m2!1sfr!2sus!4v1683099622939!5m2!1sfr!2sus"
+                    width="100%"
+                    height="100%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  >
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-4 mb-4 mb-md-0">
+                <h4 class="footer-title">Liens rapides</h4>
+                <ul class="footer-links" style="font-weight: bold">
+                  <li>
+                    <a href="index.html">
+                      <i class="fas fa-chevron-right"></i> CLIENT
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> PDV </a>
+                  </li>
+                  <li>
+                    <a href="tarifs.html">
+                      <i class="fas fa-chevron-right"></i> MARCHAND
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i> TARIFS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="faq.html">
+                      <i class="fas fa-chevron-right"></i> FAQ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="contact.html">
+                      <i class="fas fa-chevron-right"></i> CONTACT
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-4 mb-4 mb-md-0">
+                <h4 class="footer-title">Légal</h4>
+                <ul class="footer-links" style="font-weight: bold">
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i> Conditions
+                      d'utilisation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i> Politique de
+                      confidentialité
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i> Mentions légales
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i> Cookies
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-4">
+                <h4 class="footer-title">Contact</h4>
+                <ul class="footer-contact">
+                  <li>
+                    <div class="icon-box">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-info">
+                      <span>Téléphone</span>
+                      <p>+XX XX XX XX XX</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon-box">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                      <span>Email</span>
+                      <p>contact@paytou.com</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon-box">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-info">
+                      <span>Adresse</span>
+                      <p>Abidjan, Côte d'Ivoire</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p class="copyright">&copy; 2025 PAYTOU. Tous droits réservés.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.3.0/dist/dotlottie-wc.js"
+      type="module"
+    ></script>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS for chatbot and other interactions -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Animation on scroll for feature cards
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add(
+                  "animate__animated",
+                  "animate__fadeInUp"
+                );
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
+
+        document
+          .querySelectorAll(".feature-card, .testimonial")
+          .forEach((card) => {
+            observer.observe(card);
+          });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".app-feature");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate__fadeIn");
+                entry.target.classList.remove("opacity-0");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
+
+        elements.forEach((el) => {
+          el.classList.add("opacity-0", "animate__animated");
+          observer.observe(el);
+        });
+      });
+    </script>
+    <script>
+      window.addEventListener("load", function () {
+        const preloader = document.getElementById("preloader");
+        preloader.style.opacity = "3";
+        preloader.style.transition = "opacity 15.5s ease";
+
+        setTimeout(() => {
+          preloader.style.display = "none";
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>

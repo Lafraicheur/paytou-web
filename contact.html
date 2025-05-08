@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - PAYTOU | Le Mobile Money autrement</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+
+    
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo-paytou.png" alt="Logo PAYTOU" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">CLIENT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PDV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">MARCHAND</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="tarifs.html">TARIFS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Page Header -->
+      <div class="page-header">
+        <div class="container">
+          <div class="text-center">
+            <h1 class="display-4 fw-bold">Contactez-nous</h1>
+            <p class="fs-5">Notre équipe est là pour vous aider</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+      <div class="container py-4">
+        <div class="row g-5">
+          <!-- Info de contact -->
+          <div class="col-lg-5">
+            <h2 class="mb-4 text-primary">Restons en contact</h2>
+            <p class="mb-5">
+              Nous sommes à votre écoute pour toute question, suggestion ou
+              besoin d'assistance.
+            </p>
+
+            <!-- Méthodes de contact -->
+            <div class="mb-5">
+              <div class="d-flex align-items-start mb-4 contact-method">
+                <div class="icon-box">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h3 class="fs-5 fw-bold">Adresse</h3>
+                  <p class="mb-0">123 Rue du Commerce, Ville, Pays</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-4 contact-method">
+                <div class="icon-box">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <h3 class="fs-5 fw-bold">Téléphone</h3>
+                  <p class="mb-0">+XX XX XX XX XX</p>
+                  <p class="text-muted">Du lundi au vendredi, 8h à 18h</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-4 contact-method">
+                <div class="icon-box">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h3 class="fs-5 fw-bold">Email</h3>
+                  <p class="mb-0">contact@paytou.com</p>
+                  <p class="mb-0">support@paytou.com</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Réseaux sociaux -->
+            <div>
+              <h3 class="fs-5 fw-bold mb-3">Suivez-nous</h3>
+              <div class="d-flex">
+                <a href="#" class="social-link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulaire de contact -->
+          <div class="col-lg-7">
+            <div class="bg-white p-4 p-lg-5 rounded-3 shadow-sm">
+              <h2 class="mb-4 text-primary">Envoyez-nous un message</h2>
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Votre nom"
+                        required
+                      />
+                      <label for="name">Nom complet</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Votre email"
+                        required
+                      />
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        placeholder="Votre numéro"
+                      />
+                      <label for="phone">Téléphone</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                      <select class="form-select" id="subject" required>
+                        <option value="" selected disabled>
+                          Sélectionnez un sujet
+                        </option>
+                        <option value="question">Question générale</option>
+                        <option value="support">Support technique</option>
+                        <option value="feedback">Commentaires</option>
+                        <option value="partnership">Partenariat</option>
+                        <option value="other">Autre</option>
+                      </select>
+                      <label for="subject">Sujet</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-floating mb-4">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    style="height: 150px"
+                    placeholder="Votre message"
+                    required
+                  ></textarea>
+                  <label for="message">Message</label>
+                </div>
+
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary btn-lg">
+                    <i class="fas fa-paper-plane me-2"></i> Envoyer le message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5 text-primary">Nos bureaux</h2>
+        <div class="rounded-3 overflow-hidden shadow-sm">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.3325395304414!2d-122.01116148467422!3d37.33463337984258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb59127ce078f%3A0x18e1c3ce7becf1b!2sApple%20Park!5e0!3m2!1sen!2sus!4v1637309850935!5m2!1sen!2sus"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Preview Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="text-primary">Questions fréquentes</h2>
+          <p>
+            Vous ne trouvez pas ce que vous cherchez ? Consultez notre FAQ
+            complète
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="faq-items">
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3 class="fs-5 fw-bold mb-0">
+                    Comment créer un compte PAYTOU ?
+                  </h3>
+                  <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Téléchargez l'application PAYTOU sur Google Play Store ou
+                    App Store, puis suivez les instructions à l'écran pour créer
+                    votre compte en quelques minutes.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3 class="fs-5 fw-bold mb-0">
+                    Quels sont les frais de transaction ?
+                  </h3>
+                  <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Les transferts entre utilisateurs PAYTOU sont gratuits. Pour
+                    les autres services, consultez notre page Tarifs pour tous
+                    les détails.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3 class="fs-5 fw-bold mb-0">
+                    Comment contacter le support technique ?
+                  </h3>
+                  <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Vous pouvez contacter notre support technique par email à
+                    support@paytou.com ou par téléphone au +XX XX XX XX XX, du
+                    lundi au vendredi de 8h à 18h.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-5">
+              <a href="faq.html" class="btn btn-secondary px-4 py-2">
+                <i class="fas fa-question-circle me-2"></i> Voir toutes les FAQ
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chatbot -->
+    <!-- <div
+      id="chatbot"
+      class="chatbot-container d-none position-fixed bottom-0 end-0 mb-5 me-5 bg-white rounded-3 shadow"
+      style="width: 350px; z-index: 1000"
+    >
+      <div
+        class="p-3 bg-primary text-white d-flex justify-content-between align-items-center"
+      >
+        <h3 class="h5 mb-0">Assistant PAYTOU</h3>
+        <button id="close-chatbot" class="btn btn-link text-white p-0 border-0">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="p-3 overflow-auto" id="chatbot-body" style="height: 300px">
+        <div class="bg-light p-3 rounded-3 mb-3">
+          Bonjour ! Je suis l'assistant virtuel de PAYTOU. Comment puis-je vous
+          aider aujourd'hui ?
+        </div>
+      </div>
+      <div class="d-flex p-2 border-top">
+        <input
+          type="text"
+          id="chatbot-input"
+          class="form-control me-2"
+          placeholder="Posez votre question ici..."
+        />
+        <button
+          id="send-message"
+          class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center"
+          style="width: 38px; height: 38px"
+        >
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+    <button id="open-chatbot" class="chatbot-button">
+      <i class="fas fa-comment-dots"></i>
+    </button> -->
+
+    <!-- Footer -->
+    <footer class="footer-paytou pt-5 pb-3">
+      <div class="container">
+        <!-- Section supérieure avec effet de vague -->
+        <!-- <div class="footer-wave">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 140">
+            <path
+              fill="#FFFFFF"
+              fill-opacity="0.8"
+              d="M0,64L60,80C120,96,240,128,360,128C480,128,600,96,720,80C840,64,960,64,1080,69.3C1200,75,1320,85,1380,90.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+            ></path>
+            <path
+              fill="#F79420"
+              fill-opacity="0.4"
+              d="M0,32L60,48C120,64,240,96,360,101.3C480,107,600,85,720,69.3C840,53,960,43,1080,42.7C1200,43,1320,53,1380,58.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+            ></path>
+          </svg>
+        </div> -->
+
+        <div class="row mb-5">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="footer-brand text-center text-lg-start">
+              <div class="logo-container mb-4">
+                <img
+                  src="images/logo-paytou.png"
+                  alt="Logo PAYTOU"
+                  class="mb-3"
+                  style="height: 80px; position: relative; z-index: 5"
+                />
+                <p class="mb-2" style="font-weight: bold">
+                  PAYTOU – Le Mobile Money simplifié.
+                </p>
+              </div>
+
+              <!-- Google Maps integration -->
+              <div class="maps-container mb-4">
+                <div
+                  class="maps-wrapper rounded shadow-sm overflow-hidden"
+                  style="height: 200px"
+                >
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127356.66749006053!2d-4.050796606231408!3d5.348462711613761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ea5311959121%3A0x3fe70ddce19221a6!2sAbidjan%2C%20C%C3%B4te%20d'Ivoire!5e0!3m2!1sfr!2sus!4v1683099622939!5m2!1sfr!2sus"
+                    width="100%"
+                    height="100%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  >
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-4 mb-4 mb-md-0">
+                <h4 class="footer-title">Liens rapides</h4>
+                <ul class="footer-links" style="font-weight: bold">
+                  <li>
+                    <a href="index.html">
+                      <i class="fas fa-chevron-right"></i> CLIENT
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> PDV </a>
+                  </li>
+                  <li>
+                    <a href="tarifs.html">
+                      <i class="fas fa-chevron-right"></i> MARCHAND
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i> TARIFS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="faq.html">
+                      <i class="fas fa-chevron-right"></i> FAQ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="contact.html">
+                      <i class="fas fa-chevron-right"></i> CONTACT
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-4 mb-4 mb-md-0">
+                <h4 class="footer-title">Légal</h4>
+                <ul class="footer-links" style="font-weight: bold">
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i> Conditions
+                      d'utilisation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i> Politique de
+                      confidentialité
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i> Mentions légales
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i> Cookies
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-4">
+                <h4 class="footer-title">Contact</h4>
+                <ul class="footer-contact">
+                  <li>
+                    <div class="icon-box">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-info">
+                      <span>Téléphone</span>
+                      <p>+XX XX XX XX XX</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon-box">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                      <span>Email</span>
+                      <p>contact@paytou.com</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon-box">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-info">
+                      <span>Adresse</span>
+                      <p>Abidjan, Côte d'Ivoire</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p class="copyright">&copy; 2025 PAYTOU. Tous droits réservés.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach((item) => {
+          const question = item.querySelector(".faq-question");
+
+          question.addEventListener("click", () => {
+            // Close all other items
+            faqItems.forEach((otherItem) => {
+              if (
+                otherItem !== item &&
+                otherItem.classList.contains("active")
+              ) {
+                otherItem.classList.remove("active");
+              }
+            });
+
+            // Toggle current item
+            item.classList.toggle("active");
+          });
+        });
+
+        // Chatbot
+        const chatbotContainer = document.getElementById("chatbot");
+        const openChatBot = document.getElementById("open-chatbot");
+        const closeChatBot = document.getElementById("close-chatbot");
+        const chatbotInput = document.getElementById("chatbot-input");
+        const sendMessage = document.getElementById("send-message");
+        const chatbotBody = document.getElementById("chatbot-body");
+
+        openChatBot.addEventListener("click", function () {
+          chatbotContainer.classList.remove("d-none");
+          openChatBot.classList.add("d-none");
+        });
+
+        closeChatBot.addEventListener("click", function () {
+          chatbotContainer.classList.add("d-none");
+          openChatBot.classList.remove("d-none");
+        });
+
+        function sendUserMessage() {
+          const message = chatbotInput.value.trim();
+          if (message !== "") {
+            // Add user message
+            const userDiv = document.createElement("div");
+            userDiv.className =
+              "bg-primary text-white p-3 rounded-3 mb-3 ms-auto";
+            userDiv.style.maxWidth = "80%";
+            userDiv.textContent = message;
+            chatbotBody.appendChild(userDiv);
+
+            // Clear input
+            chatbotInput.value = "";
+
+            // Scroll to bottom
+            chatbotBody.scrollTop = chatbotBody.scrollHeight;
+
+            // Simulate bot response after delay
+            setTimeout(function () {
+              const botDiv = document.createElement("div");
+              botDiv.className = "bg-light p-3 rounded-3 mb-3";
+              botDiv.style.maxWidth = "80%";
+              botDiv.textContent =
+                "Merci pour votre message. Un de nos agents vous contactera dans les plus brefs délais.";
+              chatbotBody.appendChild(botDiv);
+
+              // Scroll to bottom again
+              chatbotBody.scrollTop = chatbotBody.scrollHeight;
+            }, 1000);
+          }
+        }
+
+        sendMessage.addEventListener("click", sendUserMessage);
+
+        chatbotInput.addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            sendUserMessage();
+          }
+        });
+
+        // Form submission
+        const contactForm = document.getElementById("contactForm");
+
+        contactForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Simulate form submission
+          const submitBtn = this.querySelector('button[type="submit"]');
+          const originalText = submitBtn.innerHTML;
+
+          submitBtn.disabled = true;
+          submitBtn.innerHTML =
+            '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Envoi en cours...';
+
+          setTimeout(function () {
+            // Show success alert
+            const alertDiv = document.createElement("div");
+            alertDiv.className =
+              "alert alert-success alert-dismissible fade show mt-4";
+            alertDiv.innerHTML = `
+                        <strong>Merci !</strong> Votre message a été envoyé avec succès. Notre équipe vous contactera prochainement.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    `;
+
+            contactForm.insertAdjacentElement("beforebegin", alertDiv);
+
+            // Reset form
+            contactForm.reset();
+
+            // Restore button
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+
+            // Auto-dismiss alert
+            setTimeout(function () {
+              alertDiv.classList.remove("show");
+            }, 5000);
+          }, 2000);
+        });
+      });
+    </script>
+  </body>
+</html>

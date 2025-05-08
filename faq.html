@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - PAYTOU | Le Mobile Money autrement</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/faq.css" />
+
+
+   
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo-paytou.png" alt="Logo PAYTOU" />
+              </a>
+    
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">CLIENT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">PDV</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">MARCHAND</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="tarifs.html">TARIFS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="display-4 fw-bold">Questions fréquentes</h1>
+                    <p class="fs-5">Trouvez rapidement les réponses à vos questions</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container py-4">
+            <!-- Tabs -->
+            <div class="text-center mb-4">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <button class="tab-btn active" data-category="general">Général</button>
+                    <button class="tab-btn" data-category="account">Compte</button>
+                    <button class="tab-btn" data-category="transactions">Transactions</button>
+                    <button class="tab-btn" data-category="security">Sécurité</button>
+                    <button class="tab-btn" data-category="merchants">Commerçants</button>
+                </div>
+            </div>
+            
+            <!-- Search Bar -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8">
+                    <div class="search-container">
+                        <input type="text" id="faqSearch" placeholder="Rechercher une question...">
+                        <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Categories -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- General -->
+                    <div class="faq-category active" id="general">
+                        <h2 class="h3 mb-4 text-primary text-center">Questions générales</h2>
+                        
+                        <div class="faq-accordion">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Qu'est-ce que PAYTOU ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>PAYTOU est un portefeuille électronique qui vous permet de faire des transferts d'argent vers n'importe quel porte-monnaie électronique. Vous pouvez effectuer des dépôts, des retraits et des transferts d'argent entre utilisateurs PAYTOU gratuitement.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Comment fonctionne PAYTOU ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>PAYTOU fonctionne comme un portefeuille électronique. Après avoir créé un compte et chargé votre solde, vous pouvez envoyer de l'argent à d'autres utilisateurs, payer chez des commerçants partenaires, ou retirer des espèces. Toutes les transactions sont instantanées et sécurisées.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Où puis-je télécharger l'application PAYTOU ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>L'application PAYTOU est disponible gratuitement sur Google Play Store pour les utilisateurs Android et sur App Store pour les utilisateurs iOS. Recherchez simplement "PAYTOU" dans votre magasin d'applications préféré.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Dans quels pays PAYTOU est-il disponible ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>PAYTOU est actuellement disponible dans [liste des pays]. Nous travaillons constamment à étendre notre service à de nouveaux pays. Restez à l'écoute pour les annonces d'expansion.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Account -->
+                    <div class="faq-category" id="account">
+                        <h2 class="h3 mb-4 text-primary text-center">Questions sur les comptes</h2>
+                        
+                        <div class="faq-accordion">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Comment créer un compte PAYTOU ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Pour créer un compte PAYTOU, téléchargez l'application, puis suivez ces étapes :</p>
+                                    <ol class="ps-3">
+                                        <li>Cliquez sur "Créer un compte"</li>
+                                        <li>Renseignez votre numéro de téléphone</li>
+                                        <li>Entrez le code de vérification reçu par SMS</li>
+                                        <li>Complétez votre profil avec les informations requises</li>
+                                        <li>Choisissez votre code PIN de sécurité</li>
+                                        <li>Votre compte est prêt à être utilisé !</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Quels documents sont nécessaires pour créer un compte ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Pour créer un compte PAYTOU, vous aurez besoin d'une pièce d'identité valide (carte d'identité, passeport ou permis de conduire) et d'un numéro de téléphone mobile actif. Pour certains niveaux de compte, une preuve de résidence (facture récente d'électricité, d'eau ou de téléphone) peut être demandée.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Comment modifier mes informations personnelles ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Pour modifier vos informations personnelles :</p>
+                                    <ol class="ps-3">
+                                        <li>Connectez-vous à votre compte PAYTOU</li>
+                                        <li>Accédez à la section "Profil" depuis le menu</li>
+                                        <li>Cliquez sur "Modifier" à côté des informations que vous souhaitez mettre à jour</li>
+                                        <li>Effectuez vos modifications et confirmez</li>
+                                    </ol>
+                                    <p>Notez que certaines modifications peuvent nécessiter une vérification supplémentaire pour des raisons de sécurité.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Puis-je avoir plusieurs comptes PAYTOU ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Non, chaque utilisateur ne peut avoir qu'un seul compte PAYTOU associé à son numéro de téléphone et à sa pièce d'identité. Cette politique est en place pour garantir la sécurité et la conformité aux réglementations financières.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Transactions -->
+                    <div class="faq-category" id="transactions">
+                        <h2 class="h3 mb-4 text-primary text-center">Questions sur les transactions</h2>
+                        
+                        <div class="faq-accordion">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Comment envoyer de l'argent avec PAYTOU ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Pour envoyer de l'argent :</p>
+                                    <ol class="ps-3">
+                                        <li>Ouvrez l'application PAYTOU et connectez-vous</li>
+                                        <li>Cliquez sur "Envoyer" depuis l'écran d'accueil</li>
+                                        <li>Sélectionnez un contact ou entrez le numéro de téléphone du destinataire</li>
+                                        <li>Saisissez le montant à envoyer</li>
+                                        <li>Vérifiez les détails et confirmez avec votre code PIN</li>
+                                        <li>Le destinataire recevra immédiatement l'argent dans son compte PAYTOU</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Quels sont les frais pour les transferts d'argent ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Les transferts entre utilisateurs PAYTOU sont totalement gratuits. Pour les transferts vers d'autres services ou les retraits, des frais peuvent s'appliquer. Consultez notre page <a href="tarifs.html" class="text-decoration-none text-primary">Tarifs</a> pour obtenir les détails complets.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Combien de temps prend un transfert d'argent ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Les transferts entre utilisateurs PAYTOU sont instantanés. Le destinataire reçoit l'argent immédiatement, dès que vous confirmez la transaction. Les deux parties reçoivent une notification instantanée pour confirmer la réussite de l'opération.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Comment déposer de l'argent sur mon compte PAYTOU ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Vous pouvez déposer de l'argent sur votre compte PAYTOU de plusieurs façons :</p>
+                                    <ul class="ps-3">
+                                        <li>Chez un agent PAYTOU autorisé</li>
+                                        <li>Par transfert bancaire</li>
+                                        <li>Via un autre service de paiement mobile compatible</li>
+                                        <li>Par carte bancaire directement dans l'application</li>
+                                    </ul>
+                                    <p>Pour plus de détails sur chaque méthode, consultez la section "Dépôt" dans l'application.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Security -->
+                    <div class="faq-category" id="security">
+                        <h2 class="h3 mb-4 text-primary text-center">Questions sur la sécurité</h2>
+                        
+                        <div class="faq-accordion">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Comment PAYTOU protège-t-il mes informations ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>PAYTOU utilise un cryptage de pointe pour protéger toutes vos informations personnelles et financières. Nous mettons en œuvre des mesures de sécurité multiples, notamment :</p>
+                                    <ul class="ps-3">
+                                        <li>Authentification à deux facteurs</li>
+                                        <li>Cryptage des données de bout en bout</li>
+                                        <li>Surveillance continue des transactions pour détecter les activités suspectes</li>
+                                        <li>Protections contre la fraude</li>
+                                        <li>Verrouillage automatique de l'application après une période d'inactivité</li>
+                                    </ul>
+                                    <p>Nous sommes également conformes aux normes internationales de sécurité des données financières.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Que faire si j'oublie mon code PIN ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Si vous oubliez votre code PIN :</p>
+                                    <ol class="ps-3">
+                                        <li>Sur l'écran de connexion, cliquez sur "Mot de passe oublié"</li>
+                                        <li>Suivez le processus de vérification d'identité</li>
+                                        <li>Vous recevrez un code de réinitialisation par SMS</li>
+                                        <li>Créez un nouveau code PIN</li>
+                                    </ol>
+                                    <p>Pour des raisons de sécurité, certaines fonctionnalités de votre compte peuvent être temporairement limitées après une réinitialisation de PIN.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Que faire si je perds mon téléphone ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Si vous perdez votre téléphone :</p>
+                                    <ol class="ps-3">
+                                        <li>Contactez immédiatement notre service client au +XX XX XX XX XX</li>
+                                        <li>Demandez le blocage temporaire de votre compte</li>
+                                        <li>Une fois que vous avez un nouveau téléphone, téléchargez à nouveau l'application</li>
+                                        <li>Connectez-vous avec vos identifiants et suivez le processus de vérification</li>
+                                        <li>Votre compte sera réactivé sur votre nouvel appareil</li>
+                                    </ol>
+                                    <p>Pour une sécurité optimale, changez votre code PIN après avoir récupéré l'accès à votre compte.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Merchants -->
+                    <div class="faq-category" id="merchants">
+                        <h2 class="h3 mb-4 text-primary text-center">Questions pour les commerçants</h2>
+                        
+                        <div class="faq-accordion">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Comment devenir commerçant partenaire PAYTOU ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Pour devenir commerçant partenaire PAYTOU :</p>
+                                    <ol class="ps-3">
+                                        <li>Remplissez le formulaire de demande en ligne sur notre site web</li>
+                                        <li>Fournissez les documents requis pour votre entreprise</li>
+                                        <li>Notre équipe commerciale vous contactera pour finaliser le processus</li>
+                                        <li>Après approbation, vous recevrez votre kit marchand PAYTOU</li>
+                                        <li>Notre équipe vous aidera pour l'installation et la formation</li>
+                                    </ol>
+                                    <p>Pour plus d'informations, contactez notre service commercial à merchant@paytou.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Quels sont les avantages pour les commerçants ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Les commerçants partenaires PAYTOU bénéficient de nombreux avantages :</p>
+                                    <ul class="ps-3">
+                                        <li>Frais de transaction réduits par rapport aux TPE traditionnels</li>
+                                        <li>Règlement des paiements plus rapide</li>
+                                        <li>Aucun coût d'équipement (simple QR code à afficher)</li>
+                                        <li>Dashboard marchand pour suivre toutes vos transactions</li>
+                                        <li>Assistance technique prioritaire</li>
+                                        <li>Visibilité auprès de notre base d'utilisateurs grandissante</li>
+                                        <li>Réduction des manipulations d'espèces</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3 class="h5 fw-bold mb-0">Comment fonctionne le paiement par QR code ?</h3>
+                                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Le paiement par QR code est simple et rapide :</p>
+                                    <ol class="ps-3">
+                                        <li>Le commerçant génère un QR code avec le montant de la transaction</li>
+                                        <li>Le client scanne ce QR code avec l'application PAYTOU</li>
+                                        <li>Le client vérifie le montant et confirme le paiement avec son code PIN</li>
+                                        <li>Le commerçant reçoit instantanément une notification de paiement</li>
+                                        <li>La transaction est terminée et le montant est crédité sur le compte marchand</li>
+                                    </ol>
+                                    <p>Vous pouvez également générer un QR code statique pour votre boutique, et le client pourra saisir le montant lui-même.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Support -->
+                    <div class="contact-support">
+                        <h2 class="h3 mb-3">Vous n'avez pas trouvé la réponse à votre question ?</h2>
+                        <p class="mb-4">Notre équipe d'assistance est disponible pour vous aider</p>
+                        <a href="contact.html" class="btn btn-primary px-4 py-2">
+                            <i class="fas fa-envelope me-2"></i> Contactez-nous
+                        </a>
+                    </div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot -->
+    <!-- <div
+      id="chatbot"
+      class="chatbot-container d-none position-fixed bottom-0 end-0 mb-5 me-5 bg-white rounded-3 shadow"
+      style="width: 350px; z-index: 1000"
+    >
+      <div
+        class="p-3 bg-primary text-white d-flex justify-content-between align-items-center"
+      >
+        <h3 class="h5 mb-0">Assistant PAYTOU</h3>
+        <button id="close-chatbot" class="btn btn-link text-white p-0 border-0">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="p-3 overflow-auto" id="chatbot-body" style="height: 300px">
+        <div class="bg-light p-3 rounded-3 mb-3">
+          Bonjour ! Je suis l'assistant virtuel de PAYTOU. Comment puis-je vous
+          aider aujourd'hui ?
+        </div>
+      </div>
+      <div class="d-flex p-2 border-top">
+        <input
+          type="text"
+          id="chatbot-input"
+          class="form-control me-2"
+          placeholder="Posez votre question ici..."
+        />
+        <button
+          id="send-message"
+          class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center"
+          style="width: 38px; height: 38px"
+        >
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+    <button id="open-chatbot" class="chatbot-button">
+      <i class="fas fa-comment-dots"></i>
+    </button> -->
+
+    <!-- Footer -->
+    <footer class="footer-paytou pt-5 pb-3">
+      <div class="container">
+        <!-- Section supérieure avec effet de vague -->
+        <!-- <div class="footer-wave">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 140">
+            <path
+              fill="#FFFFFF"
+              fill-opacity="0.8"
+              d="M0,64L60,80C120,96,240,128,360,128C480,128,600,96,720,80C840,64,960,64,1080,69.3C1200,75,1320,85,1380,90.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+            ></path>
+            <path
+              fill="#F79420"
+              fill-opacity="0.4"
+              d="M0,32L60,48C120,64,240,96,360,101.3C480,107,600,85,720,69.3C840,53,960,43,1080,42.7C1200,43,1320,53,1380,58.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+            ></path>
+          </svg>
+        </div> -->
+
+        <div class="row mb-5">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="footer-brand text-center text-lg-start">
+              <div class="logo-container mb-4">
+                <img
+                  src="images/logo-paytou.png"
+                  alt="Logo PAYTOU"
+                  class="mb-3"
+                  style="height: 80px; position: relative; z-index: 5"
+                />
+                <p class="mb-2" style="font-weight: bold">
+                  PAYTOU – Le Mobile Money simplifié.
+                </p>
+              </div>
+
+              <!-- Google Maps integration -->
+              <div class="maps-container mb-4">
+                <div
+                  class="maps-wrapper rounded shadow-sm overflow-hidden"
+                  style="height: 200px"
+                >
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127356.66749006053!2d-4.050796606231408!3d5.348462711613761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ea5311959121%3A0x3fe70ddce19221a6!2sAbidjan%2C%20C%C3%B4te%20d'Ivoire!5e0!3m2!1sfr!2sus!4v1683099622939!5m2!1sfr!2sus"
+                    width="100%"
+                    height="100%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  >
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-4 mb-4 mb-md-0">
+                <h4 class="footer-title">Liens rapides</h4>
+                <ul class="footer-links" style="font-weight: bold">
+                  <li>
+                    <a href="index.html">
+                      <i class="fas fa-chevron-right"></i> CLIENT
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> PDV </a>
+                  </li>
+                  <li>
+                    <a href="tarifs.html">
+                      <i class="fas fa-chevron-right"></i> MARCHAND
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i> TARIFS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="faq.html">
+                      <i class="fas fa-chevron-right"></i> FAQ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="contact.html">
+                      <i class="fas fa-chevron-right"></i> CONTACT
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-4 mb-4 mb-md-0">
+                <h4 class="footer-title">Légal</h4>
+                <ul class="footer-links" style="font-weight: bold">
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i> Conditions
+                      d'utilisation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i> Politique de
+                      confidentialité
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i> Mentions légales
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-right"></i> Cookies
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-4">
+                <h4 class="footer-title">Contact</h4>
+                <ul class="footer-contact">
+                  <li>
+                    <div class="icon-box">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-info">
+                      <span>Téléphone</span>
+                      <p>+XX XX XX XX XX</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon-box">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                      <span>Email</span>
+                      <p>contact@paytou.com</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon-box">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-info">
+                      <span>Adresse</span>
+                      <p>Abidjan, Côte d'Ivoire</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p class="copyright">&copy; 2025 PAYTOU. Tous droits réservés.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Tab Functionality
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const faqCategories = document.querySelectorAll('.faq-category');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    
+                    // Show corresponding category
+                    const category = button.getAttribute('data-category');
+                    faqCategories.forEach(cat => {
+                        cat.classList.remove('active');
+                        if (cat.id === category) {
+                            cat.classList.add('active');
+                        }
+                    });
+                });
+            });
+            
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // Search Functionality
+            const searchInput = document.getElementById('faqSearch');
+            const searchBtn = document.getElementById('searchBtn');
+            
+            function performSearch() {
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                
+                if (searchTerm === '') {
+                    // Reset search
+                    resetSearch();
+                    return;
+                }
+                
+                // Remove highlights
+                document.querySelectorAll('.highlight').forEach(el => {
+                    const text = el.textContent;
+                    el.outerHTML = text;
+                });
+                
+                // Count matches per category
+                let categoryMatches = {};
+                let totalMatches = 0;
+                
+                // Hide all items initially
+                faqItems.forEach(item => {
+                    item.style.display = 'none';
+                    item.classList.remove('active');
+                });
+                
+                // Search through all items
+                faqItems.forEach(item => {
+                    const questionEl = item.querySelector('.faq-question h3');
+                    const answerEl = item.querySelector('.faq-answer');
+                    const questionText = questionEl.textContent.toLowerCase();
+                    const answerText = answerEl.textContent.toLowerCase();
+                    const categoryId = item.closest('.faq-category').id;
+                    
+                    if (questionText.includes(searchTerm) || answerText.includes(searchTerm)) {
+                        // Show and highlight this item
+                        item.style.display = 'block';
+                        item.classList.add('active');
+                        
+                        // Highlight matches
+                        highlightText(questionEl, searchTerm);
+                        highlightText(answerEl, searchTerm);
+                        
+                        // Count for category
+                        categoryMatches[categoryId] = (categoryMatches[categoryId] || 0) + 1;
+                        totalMatches++;
+                    }
+                });
+                
+                // Show categories with matches
+                if (totalMatches > 0) {
+                    faqCategories.forEach(category => {
+                        category.classList.remove('active');
+                        if (categoryMatches[category.id]) {
+                            category.classList.add('active');
+                        }
+                    });
+                    
+                    // Update tab buttons
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        const category = btn.getAttribute('data-category');
+                        if (categoryMatches[category]) {
+                            btn.classList.add('active');
+                        }
+                    });
+                } else {
+                    resetSearch();
+                    alert('Aucun résultat trouvé pour "' + searchTerm + '"');
+                }
+            }
+            
+            function highlightText(element, searchTerm) {
+                const html = element.innerHTML;
+                const regex = new RegExp('(' + searchTerm + ')', 'gi');
+                element.innerHTML = html.replace(regex, '<span class="highlight">$1</span>');
+            }
+            
+            function resetSearch() {
+                // Show default category
+                faqCategories.forEach(category => {
+                    category.classList.remove('active');
+                });
+                document.getElementById('general').classList.add('active');
+                
+                // Reset tab buttons
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.getAttribute('data-category') === 'general') {
+                        btn.classList.add('active');
+                    }
+                });
+                
+                // Show all items
+                faqItems.forEach(item => {
+                    item.style.display = 'block';
+                    item.classList.remove('active');
+                });
+                
+                // Remove highlights
+                document.querySelectorAll('.highlight').forEach(el => {
+                    const text = el.textContent;
+                    el.outerHTML = text;
+                });
+            }
+            
+            // Search events
+            searchBtn.addEventListener('click', performSearch);
+            
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
+            
+            searchInput.addEventListener('input', function() {
+                if (this.value.trim() === '') {
+                    resetSearch();
+                }
+            });
+                        
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Chatbot Functionality
+            const chatbotContainer = document.querySelector(".chatbot-container");
+            const openChatbot = document.getElementById("open-chatbot");
+            const closeChatbot = document.getElementById("close-chatbot");
+            const chatbotBody = document.getElementById("chatbot-body");
+            const chatbotInput = document.getElementById("chatbot-input");
+            const sendMessage = document.getElementById("send-message");
+    
+            if (openChatbot) {
+              openChatbot.addEventListener("click", function () {
+                chatbotContainer.style.display = "flex";
+                openChatbot.style.display = "none";
+              });
+            }
+    
+            if (closeChatbot) {
+              closeChatbot.addEventListener("click", function () {
+                chatbotContainer.style.display = "none";
+                openChatbot.style.display = "flex";
+              });
+            }
+    
+            function addUserMessage(message) {
+              const messageElement = document.createElement("div");
+              messageElement.classList.add(
+                "bg-primary",
+                "text-white",
+                "p-3",
+                "rounded-3",
+                "mb-3",
+                "ms-auto"
+              );
+              messageElement.style.maxWidth = "80%";
+              messageElement.textContent = message;
+              chatbotBody.appendChild(messageElement);
+              chatbotBody.scrollTop = chatbotBody.scrollHeight;
+            }
+    
+            function addBotMessage(message) {
+              const messageElement = document.createElement("div");
+              messageElement.classList.add("bg-light", "p-3", "rounded-3", "mb-3");
+              messageElement.style.maxWidth = "80%";
+              messageElement.textContent = message;
+              chatbotBody.appendChild(messageElement);
+              chatbotBody.scrollTop = chatbotBody.scrollHeight;
+            }
+    
+            function handleUserInput() {
+              const userMessage = chatbotInput.value.trim();
+              if (userMessage !== "") {
+                addUserMessage(userMessage);
+                chatbotInput.value = "";
+                setTimeout(() => {
+                  respondToUser(userMessage);
+                }, 600);
+              }
+            }
+    
+            if (sendMessage) {
+              sendMessage.addEventListener("click", handleUserInput);
+            }
+    
+            if (chatbotInput) {
+              chatbotInput.addEventListener("keypress", function (e) {
+                if (e.key === "Enter") {
+                  handleUserInput();
+                }
+              });
+            }
+    
+            function respondToUser(message) {
+              const lowerMessage = message.toLowerCase();
+              let response = "";
+    
+              if (
+                lowerMessage.includes("bonjour") ||
+                lowerMessage.includes("salut") ||
+                lowerMessage.includes("hello")
+              ) {
+                response =
+                  "Bonjour ! Comment puis-je vous aider avec PAYTOU aujourd'hui ?";
+              } else if (
+                lowerMessage.includes("tarif") ||
+                lowerMessage.includes("prix") ||
+                lowerMessage.includes("coût")
+              ) {
+                response =
+                  "PAYTOU propose des transferts gratuits entre utilisateurs PAYTOU. Pour les autres services, veuillez consulter notre page Tarifs pour plus de détails.";
+              } else if (
+                lowerMessage.includes("transfert") ||
+                lowerMessage.includes("envoyer de l'argent") ||
+                lowerMessage.includes("envoi")
+              ) {
+              } else if (
+                lowerMessage.includes("transfert") ||
+                lowerMessage.includes("envoyer de l'argent") ||
+                lowerMessage.includes("envoi")
+              ) {
+                response =
+                  "Avec PAYTOU, vous pouvez envoyer de l'argent instantanément à n'importe quel utilisateur. Les transferts entre utilisateurs PAYTOU sont gratuits !";
+              } else if (
+                lowerMessage.includes("télécharger") ||
+                lowerMessage.includes("installer")
+              ) {
+                response =
+                  'Vous pouvez télécharger notre application sur Google Play Store ou Apple App Store. Cherchez simplement "PAYTOU" et profitez de notre expérience mobile !';
+              } else if (
+                lowerMessage.includes("contact") ||
+                lowerMessage.includes("aide")
+              ) {
+                response =
+                  "Vous pouvez nous contacter par email à contact@paytou.com ou par téléphone au +XX XX XX XX XX. Notre équipe d'assistance est disponible 7j/7.";
+              } else {
+                response =
+                  "Merci pour votre message. Pour toute question spécifique sur PAYTOU, n'hésitez pas à nous contacter via notre page de contact ou à visiter notre FAQ pour plus d'informations.";
+              }
+    
+              addBotMessage(response);
+            }
+    
+            // Animation on scroll for feature cards
+            const observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    entry.target.classList.add(
+                      "animate__animated",
+                      "animate__fadeInUp"
+                    );
+                    observer.unobserve(entry.target);
+                  }
+                });
+              },
+              {
+                threshold: 0.1,
+              }
+            );
+    
+            document
+              .querySelectorAll(".feature-card, .testimonial")
+              .forEach((card) => {
+                observer.observe(card);
+              });
+          });
+    </script>
+</body>
+</html>
